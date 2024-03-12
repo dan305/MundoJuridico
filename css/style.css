@@ -1,0 +1,802 @@
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('../assets/fonts/Inter-Medium.ttf') format('truetype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto-Regular', sans-serif;
+}
+
+
+
+.Wsp {
+  position: fixed; 
+  bottom: 0; 
+  right: 0; 
+  padding: 10px; 
+  backface-visibility: hidden; /* Evita el suavizado en elementos fijos */
+  border-radius: 50%;
+  width: 50px;
+  z-index: 1000;
+  height: 50px;  }
+
+  .Wsp:hover{
+  cursor: pointer;
+  }
+
+
+    /* Xr Responsive */
+
+  @media screen and (max-width: 425px) {
+
+    
+
+    .navbar-logo{
+        display: none;
+    }
+
+    .foto{
+      display: none;
+    }
+
+  }
+
+
+  @media screen and (max-width: 414px) {
+    .navbar-logo {
+      display: none;
+    }
+  }
+
+  .HeadLine {
+    display: flex;
+    background-image: url(../assets/img/HeadLine.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    max-height: 850px;
+    align-items: center; /* Centrar verticalmente los elementos */
+  }
+  
+  .texto-izquierda {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    padding: 120px;
+    font-size: 30px;
+    top: 0;
+    margin-bottom: 600px;
+  }
+  
+  .fotos-derecha {
+    margin-left: 20px; /* Espacio a la izquierda de la foto */
+  }
+  
+  .foto {
+    height: 600px; /* Altura de la imagen */
+    width: 600px; /* Ancho automático para mantener la proporción */
+    margin-bottom: 100px;
+  }
+  
+
+@media screen and (max-width: 414px) {
+    
+  .navbar{
+    width: 72.5%;
+  }
+
+  .wsp{
+    left: 0;
+    margin-bottom: 50px;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+  }
+
+  body {
+    overflow-x: hidden; 
+  }
+
+  .form{
+    height: 500px;
+  }
+
+  .HeadLine {
+      flex-direction: column; 
+      padding: 20px; 
+      max-height: 600px;
+    }
+    
+
+  }
+
+    .Wsp {
+        position: fixed; 
+        bottom: 0; 
+        right: 0; 
+        padding: 10px; 
+        backface-visibility: hidden;
+        border-radius: 50%;
+        width: 90px;
+        z-index: 1000;
+        height: 90px;  
+      }
+
+    .Wsp:hover{
+     cursor: pointer;
+ }
+
+ .TextSecu{
+    color: #43A1B6;
+    font-family:Roboto-Regular ;
+    font-size: 16px;
+    
+ }
+
+ .card-container {
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 90px; 
+    height: 400px;
+  }
+
+  .card {
+    background-color: #f7f7f7cc;
+    border-radius: 20px; 
+    padding: 20px; 
+    width: 100px;
+    max-height: 240px;
+    text-align: center; 
+    font-family: Inter-Medium;
+  }
+
+
+  .card img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    margin-bottom: 10px; 
+  }
+
+
+
+  .TextoSec {
+    margin: 0 auto;
+    text-align: center;
+    color: #384976;
+    font-family: roboto;
+    margin-top: 50px;
+    max-width: 1100px;
+
+}
+.circle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #F7F7F7;
+}
+
+.circle-section h1{
+    border-bottom: 6px solid #43A1B6; 
+    padding-bottom: 10px; 
+    color: #252121 ;
+    font-family: roboto;
+    font-size: 60px;
+    margin: 40px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  text-align: center;
+  margin: 20px;
+  padding: 40px;
+}
+
+.circle img {
+  width: 300px; 
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.circle h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #252121;
+  font-size: 26px;
+  font-family: roboto;
+}
+
+.circle p {
+  color: #7F7F7F;
+  font-family: roboto;
+  font-size: 16px;
+  width: 400px;
+}
+
+
+.Testimonios-Section h1{
+    border-bottom: 6px solid #43A1B6; 
+    padding-bottom: 10px; 
+    color: #252121 ;
+    font-family: roboto;
+    font-size: 60px;
+    margin: 40px auto; 
+    text-align: center;
+    max-width: 20%; 
+}
+
+.Title-Contacto{
+  border-bottom: 6px solid #43A1B6; 
+  padding-bottom: 10px; 
+  color: #252121 ;
+  font-family: roboto;
+  font-size: 60px;
+  margin: 40px auto; 
+  text-align: center;
+  max-width: 60%; 
+}
+
+
+/*FOOTER*/
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../assets/img/FOTO\ CONTACTO.png);
+  padding: 50px;
+  border-radius: 20px;
+  font-family: roboto;
+}
+
+.Footer-Title{
+  border-bottom: 6px solid #43A1B6; 
+  padding-bottom: 10px; 
+  color: #252121 ;
+  font-family: roboto;
+  font-size: 60px;
+  margin: 40px auto; 
+  text-align: center;
+  justify-content: center;
+  max-width: 20%; 
+}
+
+.form-container {
+  flex: 1;
+  padding: 60px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  border-radius: 5px;
+  height: 500px;
+  max-width: 600px;
+}
+
+.form-container p{
+  padding-bottom: 10px;
+  font-size: 24px;
+  padding: 5px;
+}
+
+.form-container h2{
+  font-size: 20px;
+}
+
+.map-container {
+  flex: 1;
+  padding: 20px;
+  margin-left: 200px;
+  border-radius: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+input[type="submit"] {
+  background-color: #43A1B6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #218c9e;
+}
+/* Navbar */
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  background-color: #384976;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-logo img {
+  height: 80px;
+  width: 80px;
+}
+
+.navbar-content a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.contact-button {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 1px solid #43A1B6;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.contact-button:hover {
+  transform: scale(1.1);
+  background-color: #43A1B6;
+}
+
+
+/* Texto Secu */
+.TextSecu {
+  color: #43A1B6;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* Testimonial Cards */
+.testimonial-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  position: relative;
+  margin: 20px;
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(0.7);
+}
+
+.testimonial-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  max-height: 500px;
+  width: 90%;
+  background-color: rgba(56, 73, 118, 0.33);
+  color: white;
+  text-align: center;
+  overflow: auto;
+  font-size: 12px;
+}
+
+.testimonial-content p{
+font-size: 26px;
+padding: 30px;
+max-height: 90%;
+}
+
+
+@media screen and (max-width: 444px) {
+
+  .navbar{
+    width: 91.5%;
+  }
+
+  .navbar-logo{
+    display: none;
+  }
+
+  .foto{
+    display: none;
+  }
+
+  .Wsp{
+    left: 0;
+    margin-bottom: 50px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .Title-Contacto{
+    text-align: center;
+  }
+
+  .HeadLine {
+    flex-direction: column; 
+    height: auto; 
+    padding: 20px; 
+  }
+
+  .texto-izquierda,
+  .fotos-derecha {
+    flex: none; 
+    width: auto; 
+    padding: 20px; 
+    margin: 0; 
+  }
+
+  .foto {
+    margin-bottom: 20px;
+  }
+
+.map-container{
+
+  width: 120px;
+  height: 10px;
+  margin-left: -20px;
+}
+
+  .HeadLine .texto-izquierda{
+    margin-top: 200px;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    max-width: 100%;
+    margin: 20px auto;
+    max-width: 400px;
+  }
+
+  .testimonial-content {
+    padding: 20px;
+    max-height: none;
+  }
+
+  .testimonial-content p{
+    font-size: 22px;
+  }
+  
+  .navbar{
+    max-width: auto;
+  }
+  
+  .navbar-logo img {
+    height: 70px;
+    width: 80px;
+    margin-left: 10px;
+  }
+
+  .texto-izquierda {
+    padding: 30px;
+    margin: 30px;
+    font-size: 16px;
+  }
+
+  .fotos-derecha {
+    margin-top: 30px;
+  }
+
+
+  .TextoSec {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .card-container {
+    margin-top: 190px;
+    margin-bottom: 150px;
+    flex-direction: column;
+  }
+
+  .Testimonios-Section h1 {
+    font-size: 40px;
+    max-width: 80%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+  }
+  
+  .card {
+    width: 90%;
+    margin-bottom: 40px;
+    margin: 0 auto;
+  }
+
+  .map-container{
+    display: none;
+  }
+
+  .Title-Contacto{
+    left: 0;
+    margin: 0 auto;
+    max-height: 2000px;
+  }
+
+  footer{
+    
+  }
+.row {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+.circle {
+  text-align: center; 
+  margin: 20px;
+  padding: 40px;
+}
+
+.circle img {
+  display: block; 
+  margin: 0 auto; 
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+.circle h3 {
+  margin-top: 20px; 
+  margin-bottom: 10px; 
+  color: #252121;
+  font-size: 20px;
+  font-family: roboto;
+}
+.circle p {
+  text-align: center; 
+  padding: 0 10px; 
+  margin: 10px 0; 
+  max-width: 100%;
+  box-sizing: border-box;
+}
+}
+
+@media screen and (min-width: 1024px) {
+
+
+  .card-container {
+    margin-top: 200px;
+  }
+
+  .card {
+    width: 350px;
+    height: 900px;
+    margin-left: 10px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+  
+  .circle {
+    text-align: center; 
+    margin: 20px;
+    padding: 40px;
+  }
+  
+  .circle img {
+    display: block; 
+    margin: 0 auto; 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+  }
+  
+  .circle h3 {
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+    color: #252121;
+    font-size: 20px;
+    font-family: roboto;
+  }
+  .circle p {
+    text-align: center; 
+    padding: 0 10px; 
+    margin: 10px 0;
+    max-width: 100%; 
+    box-sizing: border-box; 
+  }
+
+  
+
+  
+
+  .wsp{
+    left: 0;
+    margin-right: 2000px;
+    position: relative;
+  }
+  }
+
+  @media screen and (min-width: 768px) {
+
+    
+
+    .texto-izquierda{
+      margin-top: 200px;
+    }
+
+    .HeadLine {
+      /* flex-direction: column;  */
+      padding: 20px; 
+      height: 1200px;
+    }
+
+    .Testimonios-Section h1{
+      max-width: 500px;
+    }
+
+    .Title-Contacto{
+      max-width: 500px;
+    }
+
+    .wsp{
+      left:0;
+    }
+
+    .form-container{
+      height: 400px;
+    }
+
+    .card p{
+      font-size: 14px;
+    }
+
+    .texto-izquierda h2, p {
+      font-size: 30px;
+
+    }
+  
+    .card-container {
+      margin-top: 200px;
+    }
+  
+    .card {
+      width: 350px;
+      height: 900px;
+      margin-left: 10px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center; /
+    }
+    
+    .circle {
+      text-align: center; 
+      margin: 20px;
+      padding: 40px;
+    }
+    
+    .circle img {
+      display: block; 
+      margin: 0 auto; 
+      width: 150px; 
+      height: 150px; 
+      border-radius: 50%;
+      object-fit: cover; 
+    }
+    
+    .circle h3 {
+      margin-top: 20px; 
+      margin-bottom: 10px; 
+      color: #252121;
+      font-size: 20px;
+      font-family: roboto;
+    }
+    .circle p {
+      text-align: center; 
+      padding: 0 10px; 
+      margin: 10px 0; 
+      max-width: 100%; 
+      box-sizing: border-box; 
+    }
+  
+    
+    .texto-izquierda {
+      font-size: 30px;
+      height: 200px;
+      max-width: 2000px;
+    }
+  
+
+    }
+  
+
+
+
+/* Media query para pantallas grandes con ancho de pantalla de 1240px */
+@media screen and (min-width: 1240px) {
+ 
+ 
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-logo img {
+    height: 140px;
+    width: 160px;
+    margin-left: 40px;
+  }
+
+
+
+  .Wsp {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+
+  .TextoSec {
+    margin-top: 100px;
+  }
+
+  .card-container {
+    margin-top: 200px;
+  }
+
+  .card {
+    width: 350px;
+    height: 350px;
+  }
+
+  .Footer-Title {
+    font-size: 60px;
+    margin: 80px;
+  }
+
+}
